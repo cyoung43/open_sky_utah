@@ -13,6 +13,7 @@
 		B29229C9274962D200D401D4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B29229C8274962D200D401D4 /* Preview Assets.xcassets */; };
 		B29229D3274967AF00D401D4 /* AircraftState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29229D2274967AF00D401D4 /* AircraftState.swift */; };
 		B29229D527496F8800D401D4 /* OpenSkyStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29229D427496F8800D401D4 /* OpenSkyStatus.swift */; };
+		B29229D72749704C00D401D4 /* Utah.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29229D62749704C00D401D4 /* Utah.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		B29229C8274962D200D401D4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B29229D2274967AF00D401D4 /* AircraftState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AircraftState.swift; sourceTree = "<group>"; };
 		B29229D427496F8800D401D4 /* OpenSkyStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenSkyStatus.swift; sourceTree = "<group>"; };
+		B29229D62749704C00D401D4 /* Utah.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utah.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				B29229D427496F8800D401D4 /* OpenSkyStatus.swift */,
+				B29229D62749704C00D401D4 /* Utah.swift */,
 			);
 			name = ViewModel;
 			sourceTree = "<group>";
@@ -169,6 +172,7 @@
 			files = (
 				B29229D3274967AF00D401D4 /* AircraftState.swift in Sources */,
 				B29229C4274962D000D401D4 /* OpenSkyUtahView.swift in Sources */,
+				B29229D72749704C00D401D4 /* Utah.swift in Sources */,
 				B29229C2274962D000D401D4 /* OpenSkyUtahApp.swift in Sources */,
 				B29229D527496F8800D401D4 /* OpenSkyStatus.swift in Sources */,
 			);
