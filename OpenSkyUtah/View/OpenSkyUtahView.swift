@@ -15,7 +15,12 @@ struct OpenSkyUtahView: View {
     var body: some View {
         NavigationView {
             ZStack(alignment: .bottomTrailing) {
-                Map(coordinateRegion: $region)
+                Map(coordinateRegion: $region, annotationItems: openSkyService.aircraftStates) { aircraftState in
+                    MapAnnotation(coordinate: aircraftState.coordinate) {
+                        
+                    }
+                    MapMarker(coordinate: aircraftState.coordinate, tint: .blue)
+                }
                 Button {
                     openSkyService.refreshStatus()
                 } label: {

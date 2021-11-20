@@ -14,6 +14,7 @@
 		B29229D3274967AF00D401D4 /* AircraftState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29229D2274967AF00D401D4 /* AircraftState.swift */; };
 		B29229D527496F8800D401D4 /* OpenSkyStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29229D427496F8800D401D4 /* OpenSkyStatus.swift */; };
 		B29229D72749704C00D401D4 /* Utah.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29229D62749704C00D401D4 /* Utah.swift */; };
+		B29229D927499E1C00D401D4 /* AircraftView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29229D827499E1C00D401D4 /* AircraftView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		B29229D2274967AF00D401D4 /* AircraftState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AircraftState.swift; sourceTree = "<group>"; };
 		B29229D427496F8800D401D4 /* OpenSkyStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenSkyStatus.swift; sourceTree = "<group>"; };
 		B29229D62749704C00D401D4 /* Utah.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utah.swift; sourceTree = "<group>"; };
+		B29229D827499E1C00D401D4 /* AircraftView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AircraftView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				B29229C3274962D000D401D4 /* OpenSkyUtahView.swift */,
 				B29229C1274962D000D401D4 /* OpenSkyUtahApp.swift */,
+				B29229D827499E1C00D401D4 /* AircraftView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -170,6 +173,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B29229D927499E1C00D401D4 /* AircraftView.swift in Sources */,
 				B29229D3274967AF00D401D4 /* AircraftState.swift in Sources */,
 				B29229C4274962D000D401D4 /* OpenSkyUtahView.swift in Sources */,
 				B29229D72749704C00D401D4 /* Utah.swift in Sources */,

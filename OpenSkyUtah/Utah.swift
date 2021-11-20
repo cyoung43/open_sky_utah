@@ -11,8 +11,8 @@ import MapKit
 struct Utah {
     static let minLatitude = 37.0
     static let maxLatitude = 42.0
-    static let minLongitude = -109.0
-    static let maxLongitude = -114.0
+    static let minLongitude = -114.0
+    static let maxLongitude = -109.0
     static let margin = 1.05
     
     static var center: CLLocationCoordinate2D {

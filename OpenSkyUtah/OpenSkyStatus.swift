@@ -15,16 +15,25 @@ class OpenSkyService: ObservableObject {
         let session = URLSession.shared
         
         if let url = URL(string: Utah.urlString) {
-            let task = session.dataTask(with: url) { data, response, error in
+            let task = session.dataTask(with: url) { [self] data, response, error in
                 if let dataObject = data, error == nil {
-                    if let json = try? JSONSerialization.jsonObject(with: dataObject, options: []) as? [String: Any] {
-                        if let states = json["states"] as? [[Any]] {
-                            print(states)
-                        }
-                    }
+                    update(from: dataObject)
                 }
             }
             task.resume()
+        }
+    }
+    
+    private func update(from data: Data) {
+        DispatchQueue.main.async { [self] in
+            aircraftStates = []
+            if let json = try? JSONSerialization.jsonObject(with: data, options: []) as? [String: Any] {
+                if let states = json["states"] as? [[Any]] {
+                    states.forEach { state in
+                        aircraftStates.append(AircraftState(from: state))
+                    }
+                }
+            }
         }
     }
 }
