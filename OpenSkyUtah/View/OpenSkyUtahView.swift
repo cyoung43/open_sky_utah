@@ -9,9 +9,23 @@ import SwiftUI
 import MapKit
 
 struct OpenSkyUtahView: View {
+    @State private var region = Utah.region
+    @ObservedObject var openSkyService = OpenSkyService()
+    
     var body: some View {
         NavigationView {
-            Map(coordinateRegion: <#T##Binding<MKCoordinateRegion>#>)
+            ZStack(alignment: .bottomTrailing) {
+                Map(coordinateRegion: $region)
+                Button {
+                    openSkyService.refreshStatus()
+                } label: {
+                    Image(systemName: "arrow.clockwise.circle.fill")
+                        .imageScale(.large)
+                        .padding()
+                }
+            }
+                .navigationTitle("Utah Skies")
+                .edgesIgnoringSafeArea(.all)
         }
     }
 }

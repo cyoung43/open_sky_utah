@@ -26,4 +26,8 @@ struct Utah {
     static var region: MKCoordinateRegion {
         MKCoordinateRegion(center: center, span: span)
     }
+    
+    static var urlString: String {
+        "https://opensky-network.org/api/states/all?lamin=\(minLatitude)&lomin=\(minLongitude)&lamax=\(maxLatitude)&lomax=\(maxLongitude)"
+    }
 }
