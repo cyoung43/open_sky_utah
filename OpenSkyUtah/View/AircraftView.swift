@@ -8,10 +8,20 @@
 import SwiftUI
 
 struct AircraftView: View {
+    @ObservedObject var openSkyStatus: OpenSkyService
+    
     var aircraftState: AircraftState
     
     var body: some View {
-        Image(systemName: "airplane")
-            .rotationEffect(Angle(degrees: aircraftState.heading))
+        VStack {
+            Image(systemName: "airplane")
+                .rotationEffect(Angle(degrees: aircraftState.heading))
+            if aircraftState.callsignIsVisible {
+                Text(aircraftState.callsign ?? "")
+            }
+        }
+        .onTapGesture {
+            openSkyStatus.changeCallSignVisibility(visibility: !aircraftState.callsignIsVisible, aircraftState: aircraftState)
+        }
     }
 }
