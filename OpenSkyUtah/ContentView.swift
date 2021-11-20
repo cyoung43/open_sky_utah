@@ -2,7 +2,7 @@
 //  ContentView.swift
 //  OpenSkyUtah
 //
-//  Created by New User on 11/20/21.
+//  Created by Chris Young on 11/20/21.
 //
 
 import SwiftUI
