@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B29229C2274962D000D401D4 /* OpenSkyUtahApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29229C1274962D000D401D4 /* OpenSkyUtahApp.swift */; };
-		B29229C4274962D000D401D4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29229C3274962D000D401D4 /* ContentView.swift */; };
+		B29229C4274962D000D401D4 /* OpenSkyUtahView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29229C3274962D000D401D4 /* OpenSkyUtahView.swift */; };
 		B29229C6274962D200D401D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B29229C5274962D200D401D4 /* Assets.xcassets */; };
 		B29229C9274962D200D401D4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B29229C8274962D200D401D4 /* Preview Assets.xcassets */; };
 		B29229D3274967AF00D401D4 /* AircraftState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29229D2274967AF00D401D4 /* AircraftState.swift */; };
@@ -18,7 +18,7 @@
 /* Begin PBXFileReference section */
 		B29229BE274962D000D401D4 /* OpenSkyUtah.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenSkyUtah.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B29229C1274962D000D401D4 /* OpenSkyUtahApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenSkyUtahApp.swift; sourceTree = "<group>"; };
-		B29229C3274962D000D401D4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B29229C3274962D000D401D4 /* OpenSkyUtahView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenSkyUtahView.swift; sourceTree = "<group>"; };
 		B29229C5274962D200D401D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B29229C8274962D200D401D4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B29229D2274967AF00D401D4 /* AircraftState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AircraftState.swift; sourceTree = "<group>"; };
@@ -91,7 +91,7 @@
 		B29229D12749678900D401D4 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				B29229C3274962D000D401D4 /* ContentView.swift */,
+				B29229C3274962D000D401D4 /* OpenSkyUtahView.swift */,
 				B29229C1274962D000D401D4 /* OpenSkyUtahApp.swift */,
 			);
 			path = View;
@@ -168,7 +168,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B29229D3274967AF00D401D4 /* AircraftState.swift in Sources */,
-				B29229C4274962D000D401D4 /* ContentView.swift in Sources */,
+				B29229C4274962D000D401D4 /* OpenSkyUtahView.swift in Sources */,
 				B29229C2274962D000D401D4 /* OpenSkyUtahApp.swift in Sources */,
 				B29229D527496F8800D401D4 /* OpenSkyStatus.swift in Sources */,
 			);

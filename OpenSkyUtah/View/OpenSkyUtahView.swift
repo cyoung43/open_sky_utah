@@ -6,16 +6,18 @@
 //
 
 import SwiftUI
+import MapKit
 
-struct ContentView: View {
+struct OpenSkyUtahView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        NavigationView {
+            Map(coordinateRegion: <#T##Binding<MKCoordinateRegion>#>)
+        }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        OpenSkyUtahView()
     }
 }
