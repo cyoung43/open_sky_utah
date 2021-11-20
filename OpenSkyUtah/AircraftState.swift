@@ -37,6 +37,8 @@ struct AircraftState: Identifiable {
     var specialPurposeIndicator: Bool
     var positionSource: PositionSource
     
+    var callsignIsVisible = false
+    
     // MARK: - Initialization
     init(from row: [Any]) {
         icao24 = AircraftState.string(for: row[0])

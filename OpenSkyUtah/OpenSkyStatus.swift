@@ -11,6 +11,12 @@ import Foundation
 class OpenSkyService: ObservableObject {
     @Published var aircraftStates: [AircraftState] = []
     
+    func changeCallSignVisibility(visibility: Bool, aircraftState: AircraftState) {
+        if let index = aircraftStates.firstIndex { $0.id == aircraftState.id } {
+            aircraftStates[index].callsignIsVisible = visibility
+        }
+    }
+    
     func refreshStatus() {
         let session = URLSession.shared
         
