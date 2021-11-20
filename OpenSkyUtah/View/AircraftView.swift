@@ -8,13 +8,10 @@
 import SwiftUI
 
 struct AircraftView: View {
+    var aircraftState: AircraftState
+    
     var body: some View {
         Image(systemName: "airplane")
-    }
-}
-
-struct AircraftView_Previews: PreviewProvider {
-    static var previews: some View {
-        AircraftView()
+            .rotationEffect(Angle(degrees: aircraftState.heading))
     }
 }
